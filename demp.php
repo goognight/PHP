@@ -8,7 +8,7 @@
 <?php
 function baidu($url){
 	$url="http://www.baidu.com/s?wd=site:".$url;
-	//正则表达式匹配
+	//正则表达式匹
     $ru="/<p><b>找到相关结果数约(.*)\s*个<\/b><\/p>/";
     $curl=curl_init();
     curl_setopt($curl,CURLOPT_URL,$url);
